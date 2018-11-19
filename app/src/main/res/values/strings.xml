@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FritzCamronExam2Practice</string>
+    <string name="joke_intro_1">Knock Knock!</string>
+    <string name="joke_intro_2">Whos there?</string>
 </resources>

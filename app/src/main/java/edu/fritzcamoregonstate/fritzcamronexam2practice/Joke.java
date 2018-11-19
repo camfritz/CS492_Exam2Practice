@@ -1,14 +1,16 @@
 package edu.fritzcamoregonstate.fritzcamronexam2practice;
 
+import java.util.UUID;
+
 public class Joke {
     private String mJokeTitle;
     private Boolean mIsViewed;
     private String mJokeContent[];
+    private UUID mJokeId;
 
-    public Joke(String jokeTitle, String[] jokeContent) {
-        mJokeTitle = jokeTitle;
+    public Joke() {
+        mJokeId = UUID.randomUUID();
         mIsViewed = false;
-        mJokeContent = jokeContent;
     }
 
     public String getJokeTitle() {
@@ -33,5 +35,9 @@ public class Joke {
 
     public void setJokeContent(String[] jokeContent) {
         mJokeContent = jokeContent;
+    }
+
+    public UUID getJokeId() {
+        return mJokeId;
     }
 }
